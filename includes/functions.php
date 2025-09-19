@@ -24,16 +24,31 @@ function logActivity($message) {
     file_put_contents($logFile, date('Y-m-d H:i:s') . " - $message\n", FILE_APPEND);
 }
 
-// Funções de segurança
+// Funções de segurança CSRF
 function generateCSRFToken() {
+    if (session_status() === PHP_SESSION_NONE) {
+        session_start();
+    }
+    
     if (!isset($_SESSION['csrf_token'])) {
         $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
     }
+    
     return $_SESSION['csrf_token'];
 }
 
-function verifyCSRFToken($token) {
-    return isset($_SESSION['csrf_token']) && hash_equals($_SESSION['csrf_token'], $token);
+function validateCSRF($token) {
+    if (session_status() === PHP_SESSION_NONE) {
+        session_start();
+    }
+    
+    return isset($_SESSION['csrf_token']) && 
+           hash_equals($_SESSION['csrf_token'], $token);
+}
+
+function renderCSRFField() {
+    $token = generateCSRFToken();
+    return '<input type="hidden" name="csrf_token" value="' . $token . '">';
 }
 
 // Funções úteis
@@ -58,4 +73,20 @@ function getUserIP() {
         }
     }
     return $_SERVER['REMOTE_ADDR'] ?? '0.0.0.0';
+}
+
+function checkRateLimit($identifier, $maxAttempts = 5, $timeWindow = 3600) {
+    $cacheKey = "rate_limit_$identifier";
+    $attempts = $_SESSION[$cacheKey] ?? ['count' => 0, 'first_attempt' => time()];
+    
+    $currentTime = time();
+    
+    if ($currentTime - $attempts['first_attempt'] > $timeWindow) {
+        $attempts = ['count' => 0, 'first_attempt' => $currentTime];
+    }
+    
+    $attempts['count']++;
+    $_SESSION[$cacheKey] = $attempts;
+    
+    return $attempts['count'] <= $maxAttempts;
 }
