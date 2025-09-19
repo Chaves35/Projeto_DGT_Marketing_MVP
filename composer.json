@@ -1,0 +1,24 @@
+{
+    "name": "dgtmarketing/landing-page-mvp",
+    "description": "Landing Page MVP para Marketing Digital",
+    "type": "project",
+    "require": {
+        "php": ">=8.0",
+        "phpmailer/phpmailer": "^6.9",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "DGTMarketing\\": "src/"
+        },
+        "files": [
+            "includes/functions.php",
+            "includes/validation.php"
+        ]
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ]
+    }
+}

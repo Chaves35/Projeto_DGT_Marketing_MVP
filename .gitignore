@@ -1,0 +1,31 @@
+# Ambiente
+.env
+.env.backup
+
+# Dependências
+vendor/
+node_modules/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/*.log
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Cache
+composer.lock
+package-lock.json
+
+# Segurança
+*.pem
+*.key
+
+# Uploads
+/uploads/*
+!/uploads/.gitkeep
