@@ -15,6 +15,7 @@ include_once __DIR__ . '/includes/header.php';
     <?php include_once __DIR__ . '/components/features-section.php'; ?>
     <?php include_once __DIR__ . '/components/testimonials.php'; ?>
     <?php include_once __DIR__ . '/components/cta-section.php'; ?>
+    <?php include_once __DIR__ . '/components/contact-form.php'; ?>
 </main>
 
 <?php

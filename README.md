@@ -1,15 +1,60 @@
-# Projeto_DGT_Marketing_MVP
+# 🚀 Projeto DGT Marketing MVP
 
-A DGT Marketing nasce com o propósito de impulsionar negócios no ambiente digital por meio de estratégias inteligentes, criativas e orientadas por dados. Somos especialistas em construir presença online sólida e gerar resultados reais para nossos clientes.
-Nosso foco está em entregar soluções completas que conectam marcas ao público certo, no momento certo. Atuamos em cinco pilares fundamentais:
-• 	Tráfego Pago
-Gerenciamos campanhas em plataformas como Google Ads, Meta Ads e outras, com foco em performance, segmentação precisa e retorno sobre investimento.
-• 	Criação de Sites e Landing Pages
-Desenvolvemos experiências digitais que convertem. Sites institucionais, páginas de captura e ambientes personalizados para cada etapa do funil de vendas.
-• 	SEO (Otimização para Mecanismos de Busca)
-Aplicamos técnicas avançadas de SEO para aumentar a visibilidade orgânica, melhorar o posicionamento no Google e atrair visitantes qualificados.
-• 	Gestão de Redes Sociais
-Criamos conteúdo estratégico, gerenciamos comunidades e fortalecemos a presença digital das marcas nas principais plataformas sociais.
-• 	Análise e Estratégia
-Cada ação é guiada por dados. Monitoramos, ajustamos e otimizamos constantemente para garantir que cada investimento gere impacto.
-A DGT é mais do que uma agência — somos parceiros na jornada digital. Nosso compromisso é transformar ideias em resultados, com agilidade, transparência e inovação.
+Este projeto é o MVP da plataforma **DGT Marketing**, voltada para soluções digitais completas, incluindo tráfego pago, criação de sites, landing pages, SEO e gestão de redes sociais.
+
+---
+
+## 📌 Visão Geral
+
+A DGT Marketing tem como missão impulsionar negócios no ambiente digital por meio de estratégias inteligentes e orientadas por dados. Este MVP representa a base técnica da plataforma, com foco em performance, segurança e escalabilidade.
+
+---
+
+## ✅ Funcionalidades Implementadas
+
+- Estrutura completa do projeto
+- Banco de dados configurado e funcional
+- Sistema de segurança CSRF
+- Frontend responsivo
+- Formulário de contato integrado
+- Sistema de logs estruturado
+- Versionamento via GitHub
+- Documentação técnica atualizada
+
+---
+
+## ⚠️ Pendências para a próxima sessão
+
+- Teste final do envio de formulário
+- Verificação de salvamento no banco de dados
+- Validação dos logs de segurança
+
+---
+
+## 🧠 Tecnologias Utilizadas
+
+- PHP 8.3.15
+- Laragon (Ambiente local)
+- HTML5, CSS3, JavaScript
+- Git & GitHub
+- MySQL
+- Composer (se aplicável)
+
+---
+
+## 📊 Status do Projeto
+
+**Progresso geral: 85% concluído**  
+O projeto encontra-se em fase de validação final, com previsão de entrega completa após testes funcionais.
+
+---
+
+## 🤝 Contribuições
+
+Este projeto está em desenvolvimento interno. Em breve será aberto para contribuições externas com guidelines e roadmap público.
+
+---
+
+## 📄 Licença
+
+Este projeto está sob licença [especificar aqui, ex: MIT, GPL, etc.].
