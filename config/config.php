@@ -1,4 +1,9 @@
 <?php
+// Iniciar sessão antes de qualquer output
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
 require_once __DIR__ . '/../vendor/autoload.php';
 
 use Dotenv\Dotenv;
@@ -11,7 +16,6 @@ try {
     $dotenv = Dotenv::createImmutable($dotenvPath);
     $dotenv->load();
 } catch (Exception $e) {
-    // Tratamento de erro
     die("Erro ao carregar .env: " . $e->getMessage());
 }
 

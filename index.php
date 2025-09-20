@@ -12,7 +12,9 @@ include_once __DIR__ . '/includes/header.php';
 
 <main>
     <?php include_once __DIR__ . '/components/hero-section.php'; ?>
+    <?php include_once __DIR__ . '/components/services-section.php'; ?>
     <?php include_once __DIR__ . '/components/features-section.php'; ?>
+    <?php include_once __DIR__ . '/components/about-section.php'; ?>
     <?php include_once __DIR__ . '/components/testimonials.php'; ?>
     <?php include_once __DIR__ . '/components/cta-section.php'; ?>
     <?php include_once __DIR__ . '/components/contact-form.php'; ?>

@@ -4,11 +4,14 @@ namespace DGTMarketing\Security;
 class CSRFProtection {
     private $tokenLifetime = 3600; // 1 hora
 
-    public function generateToken() {
+    public function __construct() {
+        // Verificar se sessão já não foi iniciada
         if (session_status() === PHP_SESSION_NONE) {
             session_start();
         }
+    }
 
+    public function generateToken() {
         $token = bin2hex(random_bytes(32));
         $expiration = time() + $this->tokenLifetime;
         
@@ -17,10 +20,6 @@ class CSRFProtection {
     }
 
     public function validateToken($token) {
-        if (session_status() === PHP_SESSION_NONE) {
-            session_start();
-        }
-
         if (!isset($_SESSION['csrf_tokens'][$token])) {
             return false;
         }

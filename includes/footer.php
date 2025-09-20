@@ -21,11 +21,12 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 DGT Marketing. Todos os direitos reservados.</p>
+                <p>&copy; 2025 DGT Marketing. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
     <script src="/assets/js/main.js"></script>
-</body>
-</html>
+    </body>
+
+    </html>

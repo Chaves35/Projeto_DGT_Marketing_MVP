@@ -6,7 +6,7 @@ $csrfProtection = new CSRFProtection();
 <section id="contato" class="contact-form">
     <div class="container">
         <h2>Entre em Contato</h2>
-        <form id="contact-form" method="POST" action="/forms/contact-handler.php">
+        <form id="contact-form" method="POST" action="forms/contact-handler.php">
             <?= $csrfProtection->renderTokenField() ?>
             
             <div class="form-group">

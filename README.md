@@ -1,60 +1,61 @@
-# 🚀 Projeto DGT Marketing MVP
-
-Este projeto é o MVP da plataforma **DGT Marketing**, voltada para soluções digitais completas, incluindo tráfego pago, criação de sites, landing pages, SEO e gestão de redes sociais.
-
----
-
-## 📌 Visão Geral
-
-A DGT Marketing tem como missão impulsionar negócios no ambiente digital por meio de estratégias inteligentes e orientadas por dados. Este MVP representa a base técnica da plataforma, com foco em performance, segurança e escalabilidade.
-
----
-
-## ✅ Funcionalidades Implementadas
-
-- Estrutura completa do projeto
-- Banco de dados configurado e funcional
-- Sistema de segurança CSRF
-- Frontend responsivo
-- Formulário de contato integrado
-- Sistema de logs estruturado
-- Versionamento via GitHub
-- Documentação técnica atualizada
-
----
-
-## ⚠️ Pendências para a próxima sessão
-
-- Teste final do envio de formulário
-- Verificação de salvamento no banco de dados
-- Validação dos logs de segurança
-
----
-
-## 🧠 Tecnologias Utilizadas
-
-- PHP 8.3.15
-- Laragon (Ambiente local)
-- HTML5, CSS3, JavaScript
-- Git & GitHub
-- MySQL
-- Composer (se aplicável)
-
----
-
-## 📊 Status do Projeto
-
-**Progresso geral: 85% concluído**  
-O projeto encontra-se em fase de validação final, com previsão de entrega completa após testes funcionais.
-
----
-
-## 🤝 Contribuições
-
-Este projeto está em desenvolvimento interno. Em breve será aberto para contribuições externas com guidelines e roadmap público.
-
----
-
 ## 📄 Licença
 
+🚀 Projeto DGT Marketing MVP - README Aprimorado
+📌 Visão Geral
+A DGT Marketing nasceu com a missão de transformar negócios digitais através de estratégias inteligentes e orientadas por dados. Este MVP (Minimum Viable Product) representa nossa base técnica, focando em performance, segurança e escalabilidade.
+
+🎯 Objetivo do Projeto
+Desenvolver uma plataforma de marketing digital que ofereça:
+
+Captura eficiente de leads
+Interface responsiva e intuitiva
+Segurança de dados robusta
+Flexibilidade para futuras expansões
+
+✅ Funcionalidades Implementadas
+Técnicas
+Arquitetura modular PHP
+Sistema de segurança CSRF
+Sanitização de inputs
+Logs de segurança estruturados
+Validação de formulários
+Integração com banco de dados MySQL
+Funcionais
+Landing page responsiva
+Formulário de contato integrado
+Seções:
+Hero
+Serviços
+Sobre
+Depoimentos
+Call-to-Action
+
+🧩 Estrutura do Projeto
+🛠️ Tecnologias & Ferramentas
+Backend
+PHP 8.3.15
+MySQL
+Composer
+PHPMailer
+Dotenv
+Frontend
+HTML5
+CSS3 (Design responsivo)
+JavaScript
+SVG
+Ambiente
+Laragon
+Apache
+Git & GitHub
+
 Este projeto está sob licença [especificar aqui, ex: MIT, GPL, etc.].
+
+SITEDGTMARKETING_MVP/
+├── assets/ # Recursos estáticos
+├── components/ # Componentes PHP
+├── config/ # Configurações
+├── forms/ # Processamento de formulários
+├── includes/ # Funções e utilitários
+├── logs/ # Registros de sistema
+├── src/ # Classes customizadas
+└── vendor/ # Dependências Composer
